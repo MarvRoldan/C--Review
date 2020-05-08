@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.IO; // This allows us to read from files.
 
 namespace C__Review
 {
@@ -9,9 +10,17 @@ namespace C__Review
         {
             Console.WriteLine("My simple method has executed!");
         }
-        static void myParamMethod(string firstName, string lastName) 
+        static void myParamMethod(string firstName, string lastName)
         {
             Console.WriteLine("Hello " + firstName + " " + lastName);
+        }
+        static int myOverloadMethod(int x, int y)
+        {
+            return x + y;
+        }
+        static double myOverloadMethod(double x, double y)
+        {
+            return x + y;
         }
         static void Main(string[] args)
         {
@@ -185,7 +194,7 @@ namespace C__Review
             /*
             * Array Methods
             */
-            string[] myNames = {"John", "Joe", "Bob"};
+            string[] myNames = { "John", "Joe", "Bob" };
             Array.Sort(myNames);
 
             foreach (string element in myNames)
@@ -197,7 +206,7 @@ namespace C__Review
             * NEW keyword
             */
             int[] myNumbers;
-            myNumbers = new int[] {1,2,3};
+            myNumbers = new int[] { 1, 2, 3 };
 
             foreach (int element in myNumbers)
             {
@@ -216,6 +225,29 @@ namespace C__Review
             */
             mySimpleMethod();
             myParamMethod("John", "Smith");
+
+            myOverloadMethod(1, 2);
+            myOverloadMethod(3.14, 3.14);
+            myOverloadMethod(3, 4.32); // Will treat 3 as 3.00.
+
+            /*
+            * Files
+            */
+            string myFile = "example.txt"; // Checks if the file exists.
+            if (File.Exists(myFile))
+            {
+                string myText = File.ReadAllText(myFile);
+                Console.WriteLine(myText);
+            }
+            else
+            {
+                Console.WriteLine("File does not exist!");
+            }
+
+            File.WriteAllText("nextexample.txt", "Hello again, world!"); // Prints out, and then deletes.
+            string myTextTwo = File.ReadAllText("example.txt");
+            Console.WriteLine(myTextTwo);
+            File.Delete("example.txt");
         }
     }
 }
