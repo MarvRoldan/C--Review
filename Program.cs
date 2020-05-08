@@ -248,6 +248,7 @@ namespace C__Review
             string myTextTwo = File.ReadAllText("example.txt");
             Console.WriteLine(myTextTwo);
             File.Delete("example.txt");
+            File.AppendText("And again!"); // This will add to the file text. 
         }
     }
 }
