@@ -158,6 +158,42 @@ namespace C__Review
             {
                 Console.WriteLine(element);
             }
+
+            string[] myShoppingList = { "Apple", "Orange", "Banana", "Apple" };
+            for (int pos = 0; pos < myShoppingList.Length; pos++)
+            {
+                if (myShoppingList[pos] == "Apple")
+                {
+                    myShoppingList[pos] = "Grapes";
+                }
+
+            }
+            foreach (string element in myShoppingList)
+            {
+                Console.WriteLine(element);
+            }
+
+            /*
+            * Array Methods
+            */
+            string[] myNames = {"John", "Joe", "Bob"};
+            Array.Sort(myNames);
+
+            foreach (string element in myNames)
+            {
+                Console.WriteLine(element);
+            }
+
+            /*
+            * NEW keyword
+            */
+            int[] myNumbers;
+            myNumbers = new int[] {1,2,3};
+            
+            foreach (int element in myNumbers)
+            {
+                Console.WriteLine(element);
+            }
         }
     }
 }
