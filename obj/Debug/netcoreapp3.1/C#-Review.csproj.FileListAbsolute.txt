@@ -1,0 +1,11 @@
+C:\Users\Marvin\Desktop\C#-Review\bin\Debug\netcoreapp3.1\C#-Review.exe
+C:\Users\Marvin\Desktop\C#-Review\bin\Debug\netcoreapp3.1\C#-Review.deps.json
+C:\Users\Marvin\Desktop\C#-Review\bin\Debug\netcoreapp3.1\C#-Review.runtimeconfig.json
+C:\Users\Marvin\Desktop\C#-Review\bin\Debug\netcoreapp3.1\C#-Review.runtimeconfig.dev.json
+C:\Users\Marvin\Desktop\C#-Review\bin\Debug\netcoreapp3.1\C#-Review.dll
+C:\Users\Marvin\Desktop\C#-Review\bin\Debug\netcoreapp3.1\C#-Review.pdb
+C:\Users\Marvin\Desktop\C#-Review\obj\Debug\netcoreapp3.1\C#-Review.csprojAssemblyReference.cache
+C:\Users\Marvin\Desktop\C#-Review\obj\Debug\netcoreapp3.1\C#-Review.AssemblyInfoInputs.cache
+C:\Users\Marvin\Desktop\C#-Review\obj\Debug\netcoreapp3.1\C#-Review.AssemblyInfo.cs
+C:\Users\Marvin\Desktop\C#-Review\obj\Debug\netcoreapp3.1\C#-Review.dll
+C:\Users\Marvin\Desktop\C#-Review\obj\Debug\netcoreapp3.1\C#-Review.pdb
