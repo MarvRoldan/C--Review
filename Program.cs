@@ -1,9 +1,18 @@
 ﻿using System;
+using System.Linq;
 
 namespace C__Review
 {
     class Program
     {
+        static void mySimpleMethod()
+        {
+            Console.WriteLine("My simple method has executed!");
+        }
+        static void myParamMethod(string firstName, string lastName) 
+        {
+            Console.WriteLine("Hello " + firstName + " " + lastName);
+        }
         static void Main(string[] args)
         {
 
@@ -189,11 +198,24 @@ namespace C__Review
             */
             int[] myNumbers;
             myNumbers = new int[] {1,2,3};
-            
+
             foreach (int element in myNumbers)
             {
                 Console.WriteLine(element);
             }
+
+            /*
+            * Ling Array Methods. This was introduced one line 2.
+            */
+            Console.WriteLine(myNumbers.Min()); // 1
+            Console.WriteLine(myNumbers.Max()); // 3
+            Console.WriteLine(myNumbers.Sum()); // 6
+
+            /*
+            * Methods
+            */
+            mySimpleMethod();
+            myParamMethod("John", "Smith");
         }
     }
 }
