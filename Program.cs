@@ -24,7 +24,6 @@ namespace C__Review
             /*
             * Operations
             */
-
             // Arithmetic
             int n = 2;
             int i = 3;
@@ -36,6 +35,23 @@ namespace C__Review
             int modulusResult = i % n;
             int incrementResult = n++;
             int decrementResult = n--;
+
+            /*
+            * Comparison
+            */
+            Console.WriteLine(i>n);
+            Console.WriteLine(i<n);
+            Console.WriteLine(i>=n);
+            Console.WriteLine(i<=n);
+            Console.WriteLine(i==n);
+            Console.WriteLine(i!=n);
+
+            /*
+            * Logical
+            */
+            Console.WriteLine(i>n && i > 0); // True
+            Console.WriteLine(i>n || i > 0); // True
+            Console.WriteLine(!true); // False
 
         }
     }
