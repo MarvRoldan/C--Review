@@ -69,6 +69,22 @@ namespace C__Review
             Console.WriteLine(Math.Abs(-5));
             Console.WriteLine(Math.Round(3.14));
 
+            /*
+            * String Methods
+            */
+            string myStringTwo = "Hello there.";
+            Console.WriteLine(myStringTwo.Length);
+            Console.WriteLine(myStringTwo.ToUpper());
+            Console.WriteLine(myStringTwo.ToLower());
+
+            string[] myStringArray = myStringTwo.Split(" ");
+            foreach (string element in myStringArray) {
+                Console.WriteLine(element);
+            }
+
+            string Greeter = $"\"{myString} {myName}\"";
+            Console.WriteLine(Greeter);
+
         }
     }
 }
