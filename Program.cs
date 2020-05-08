@@ -6,7 +6,7 @@ namespace C__Review
     {
         static void Main(string[] args)
         {
-            
+
             /*
             * Datatypes
             */
@@ -19,7 +19,7 @@ namespace C__Review
             char myChar = 'H'; // One character. Single qoutes for char.
             string myString = "Hello!"; // One character or string of characters.
 
-            bool myTruthy = true || false; 
+            bool myTruthy = true || false;
 
             /*
             * Operations
@@ -29,9 +29,9 @@ namespace C__Review
             int i = 3;
 
             int addResult = i + n;
-            int subtractResult = i -n;
+            int subtractResult = i - n;
             int multiplicationResult = i * n;
-            int divisionResult = i /n;
+            int divisionResult = i / n;
             int modulusResult = i % n;
             int incrementResult = n++;
             int decrementResult = n--;
@@ -39,19 +39,35 @@ namespace C__Review
             /*
             * Comparison
             */
-            Console.WriteLine(i>n);
-            Console.WriteLine(i<n);
-            Console.WriteLine(i>=n);
-            Console.WriteLine(i<=n);
-            Console.WriteLine(i==n);
-            Console.WriteLine(i!=n);
+            Console.WriteLine(i > n);
+            Console.WriteLine(i < n);
+            Console.WriteLine(i >= n);
+            Console.WriteLine(i <= n);
+            Console.WriteLine(i == n);
+            Console.WriteLine(i != n);
 
             /*
             * Logical
             */
-            Console.WriteLine(i>n && i > 0); // True
-            Console.WriteLine(i>n || i > 0); // True
+            Console.WriteLine(i > n && i > 0); // True
+            Console.WriteLine(i > n || i > 0); // True
             Console.WriteLine(!true); // False
+
+            /*
+            * User Inputs
+            */
+            Console.WriteLine("Please Type Your Name: ");
+            string myName = Console.ReadLine();
+            Console.WriteLine("Hello, " + myName);
+
+            /*
+            * Math Method
+            */
+            Console.WriteLine(Math.Max(2,3));
+            Console.WriteLine(Math.Min(2,3));
+            Console.WriteLine(Math.Sqrt(81));
+            Console.WriteLine(Math.Abs(-5));
+            Console.WriteLine(Math.Round(3.14));
 
         }
     }
